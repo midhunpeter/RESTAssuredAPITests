@@ -7,26 +7,21 @@ import java.util.Properties;
 public class ConfigManager {
 
     private static ConfigManager manager;
-    private final static Properties properties = new Properties();
+    private static final Properties properties = new Properties();
 
+    private ConfigManager() throws IOException {
+        InputStream inputStream = ConfigManager.class.getResourceAsStream("/config.properties");
+        properties.load(inputStream);
+    }
 
-    /*private ConfigManager(){
-        try(InputStream stream = ConfigManager.class.getResourceAsStream("/resources/config.properties")) {
-            properties.load(stream);
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }*/
-
-   private ConfigManager() throws IOException {
-       InputStream inputStream = ConfigManager.class.getResourceAsStream("../resources/config.properties");
-       properties.load(inputStream);
-   }
-
-    public static ConfigManager getInstance() throws IOException {
+    public static ConfigManager getInstance() {
         if (manager == null) {
             synchronized (ConfigManager.class) {
-                manager = new ConfigManager();
+                try {
+                    manager = new ConfigManager();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
         return manager;
