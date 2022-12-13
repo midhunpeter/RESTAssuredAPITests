@@ -1,0 +1,31 @@
+{
+  "price": [
+    {
+      "id": 1,
+      "sku": 562232,
+      "itemname": "Sensodyne ProNamel Gentle Whitening Toothpaste for Sensitive Teeth",
+      "listprice": "16.99"
+    },
+    {
+      "id": 2,
+      "sku": 223222,
+      "itemname": "Philips Sonicare ExpertClean 7300 Rechargeable Electric Toothbrush",
+      "listprice": "79.99"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "it's pretty awesome",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "Amazing toothbrush",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "Midhun Peter"
+  }
+}
