@@ -1,0 +1,1 @@
+{"uuid":"a0c4490c-d8ff-470b-8d9e-fc5536e3f1b6","name":"org.omni.api.tests.TestGETPrice","children":["1dee3a06-3378-46e2-b9d8-96991a6767bb"],"befores":[{"name":"init","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1672513828778,"stop":1672513829785}],"afters":[],"start":1672513828689,"stop":1672513832021}
