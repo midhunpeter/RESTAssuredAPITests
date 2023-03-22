@@ -7,8 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertNotNull;
+import static org.testng.Assert.*;
 
 public class TestGETPrice {
 
@@ -25,6 +24,7 @@ public class TestGETPrice {
         List<Price> priceList = priceServiceHelper.getPrice();
         assertNotNull(priceList,"Price should not be empty");
         assertFalse(priceList.isEmpty(),"Price List is not True");
+
 
     }
 

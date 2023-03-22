@@ -6,6 +6,7 @@ import java.util.Properties;
 
 public class ConfigManager {
 
+    //Use this config manager across the board
     private static ConfigManager manager;
     private static final Properties properties = new Properties();
 
